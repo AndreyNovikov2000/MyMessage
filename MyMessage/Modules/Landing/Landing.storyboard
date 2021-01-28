@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="LA2-vb-7hd">
+            <objects>
+                <viewController storyboardIdentifier="LandingViewController" id="GeC-6v-P9x" customClass="LandingViewController" customModule="Landing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xcl-kF-4UH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-Ed-EX5">
+                                <rect key="frame" x="147" y="144" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="wUJ-zd-WfM"/>
+                                    <constraint firstAttribute="height" constant="120" id="wzL-yo-7oM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-6X-EbF">
+                                <rect key="frame" x="16" y="297" width="382" height="51"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="ugn-05-oHc">
+                                <rect key="frame" x="16" y="368" width="382" height="58.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realtime messaging" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-iw-CDM">
+                                        <rect key="frame" x="69" y="0.0" width="244.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based community chat app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6I-qY-d4O">
+                                        <rect key="frame" x="33" y="38" width="316" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zik-5E-tXI">
+                                <rect key="frame" x="171.5" y="758" width="71" height="44"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="30"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mHH-rt-U1I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zik-5E-tXI" firstAttribute="centerX" secondItem="mHH-rt-U1I" secondAttribute="centerX" id="1jL-cV-3Nc"/>
+                            <constraint firstItem="ugn-05-oHc" firstAttribute="top" secondItem="1Xa-6X-EbF" secondAttribute="bottom" constant="20" id="2FP-10-elW"/>
+                            <constraint firstItem="mHH-rt-U1I" firstAttribute="bottom" secondItem="Zik-5E-tXI" secondAttribute="bottom" constant="60" id="41J-bv-syU"/>
+                            <constraint firstItem="1Xa-6X-EbF" firstAttribute="leading" secondItem="xcl-kF-4UH" secondAttribute="leading" constant="16" id="7nK-II-ape"/>
+                            <constraint firstItem="mHH-rt-U1I" firstAttribute="trailing" secondItem="1Xa-6X-EbF" secondAttribute="trailing" constant="16" id="IDb-y6-W1m"/>
+                            <constraint firstItem="YCX-Ed-EX5" firstAttribute="centerX" secondItem="mHH-rt-U1I" secondAttribute="centerX" id="Off-zT-0qR"/>
+                            <constraint firstItem="YCX-Ed-EX5" firstAttribute="top" secondItem="mHH-rt-U1I" secondAttribute="top" constant="100" id="jhJ-Hu-7TF"/>
+                            <constraint firstItem="ugn-05-oHc" firstAttribute="leading" secondItem="xcl-kF-4UH" secondAttribute="leading" constant="16" id="lMT-Q1-FSm"/>
+                            <constraint firstItem="1Xa-6X-EbF" firstAttribute="top" secondItem="YCX-Ed-EX5" secondAttribute="bottom" constant="33" id="nRp-9M-mQf"/>
+                            <constraint firstItem="mHH-rt-U1I" firstAttribute="trailing" secondItem="ugn-05-oHc" secondAttribute="trailing" constant="16" id="r1k-9q-z5A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="C6I-qY-d4O" id="uik-VK-UO9"/>
+                        <outlet property="logoImageView" destination="YCX-Ed-EX5" id="ih1-Qz-Ne5"/>
+                        <outlet property="startButton" destination="Zik-5E-tXI" id="rV8-80-gY6"/>
+                        <outlet property="subTitleLabel" destination="c3V-iw-CDM" id="7th-Xo-laF"/>
+                        <outlet property="titleLabel" destination="1Xa-6X-EbF" id="tpX-sE-zxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDT-eV-Gkp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
