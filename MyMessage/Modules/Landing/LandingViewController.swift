@@ -17,12 +17,22 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     
+    // MARK: - Instance prroperties
+    
+    var onStart: (() -> Void)?
+    
     // MARK: - Object livecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
+    }
+    
+    // MARK: - IBAction
+    
+    @IBAction func onStartButtonTapped(_ sender: UIButton) {
+        onStart?()
     }
 }
 

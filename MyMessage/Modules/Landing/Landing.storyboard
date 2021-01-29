@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="120" id="wzL-yo-7oM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-6X-EbF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyMessage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-6X-EbF">
                                 <rect key="frame" x="16" y="297" width="382" height="51"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="44"/>
                                 <nil key="textColor"/>
@@ -42,17 +42,20 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Socket IO based community chat app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6I-qY-d4O">
                                         <rect key="frame" x="33" y="38" width="316" height="20.5"/>
                                         <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="19"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zik-5E-tXI">
-                                <rect key="frame" x="171.5" y="758" width="71" height="44"/>
+                                <rect key="frame" x="171.5" y="788" width="71" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="30"/>
                                 <state key="normal" title="Start!">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onStartButtonTapped:" destination="GeC-6v-P9x" eventType="touchUpInside" id="e5Y-45-dpm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mHH-rt-U1I"/>
@@ -60,7 +63,7 @@
                         <constraints>
                             <constraint firstItem="Zik-5E-tXI" firstAttribute="centerX" secondItem="mHH-rt-U1I" secondAttribute="centerX" id="1jL-cV-3Nc"/>
                             <constraint firstItem="ugn-05-oHc" firstAttribute="top" secondItem="1Xa-6X-EbF" secondAttribute="bottom" constant="20" id="2FP-10-elW"/>
-                            <constraint firstItem="mHH-rt-U1I" firstAttribute="bottom" secondItem="Zik-5E-tXI" secondAttribute="bottom" constant="60" id="41J-bv-syU"/>
+                            <constraint firstItem="mHH-rt-U1I" firstAttribute="bottom" secondItem="Zik-5E-tXI" secondAttribute="bottom" constant="30" id="41J-bv-syU"/>
                             <constraint firstItem="1Xa-6X-EbF" firstAttribute="leading" secondItem="xcl-kF-4UH" secondAttribute="leading" constant="16" id="7nK-II-ape"/>
                             <constraint firstItem="mHH-rt-U1I" firstAttribute="trailing" secondItem="1Xa-6X-EbF" secondAttribute="trailing" constant="16" id="IDb-y6-W1m"/>
                             <constraint firstItem="YCX-Ed-EX5" firstAttribute="centerX" secondItem="mHH-rt-U1I" secondAttribute="centerX" id="Off-zT-0qR"/>
